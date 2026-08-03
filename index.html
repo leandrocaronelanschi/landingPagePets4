@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Pets Alegres | Pet Sitting com carinho de futuras veterinárias
+    </title>
+    <meta
+      name="description"
+      content="Cuidado de confiança para o seu pet enquanto você está fora. Luisa e Mayra, estudantes de Medicina Veterinária na UFES, cuidam do seu bichinho com amor."
+    />
+
+    <!-- Google Fonts: Poppins (títulos) + Inter (corpo do texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <!-- ===================== CABEÇALHO ===================== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#inicio" class="logo">
+          <span class="logo__icon" aria-hidden="true">🐾</span>
+          <span class="logo__text">Pets Alegres</span>
+        </a>
+
+        <!-- Menu de navegação -->
+        <!-- <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#inicio" class="nav__link">Início</a></li>
+            <li><a href="#sobre" class="nav__link">Quem Somos</a></li>
+            <li><a href="#servicos" class="nav__link">Como Funciona</a></li>
+            <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+          <a
+            href="https://wa.me/5527999990000"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--whatsapp nav__cta"
+          >
+            <span aria-hidden="true">💬</span> Agendar pelo WhatsApp
+          </a>
+        </nav> -->
+
+        <!-- Botão hambúrguer (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== SEÇÃO HERO ===================== -->
+      <section class="hero" id="inicio">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">Pet Sitting feito por futuras veterinárias</p>
+            <h1 class="hero__title">
+              Amor, atenção e segurança para seu pet enquanto você está fora.
+            </h1>
+            <p class="hero__subtitle">
+              Se você precisa de alguém de confiança pra cuidar do seu bichinho,
+              pode contar com a gente! Atendimento personalizado, respeitando a
+              rotina e as necessidades do seu pet. Tranquilidade para você,
+              conforto para ele 💛
+            </p>
+            <div class="hero__actions">
+              <a
+                href="https://wa.me/5527999990000"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--whatsapp btn--large"
+              >
+                <span aria-hidden="true">
+                  <img
+                    class="icon-whatsapp-hero"
+                    src="/assets/images/icon-whatsapp-svg.svg"
+                  />
+                </span>
+                Falar no WhatsApp
+              </a>
+              <a href="#sobre" class="btn btn--ghost btn--large"
+                >Conhecer as Pet Alegres</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <!-- PLACEHOLDER: foto principal dos pets — substitua o src pela imagem definitiva -->
+            <div class="hero__frame">
+              <img
+                src="/assets/images/Animal3.jpg"
+                alt="Grupo de pets fofos: filhote, gato e cachorro juntos"
+                class="hero__img img-placeholder"
+                loading="eager"
+              />
+            </div>
+            <div class="hero__badge">
+              <span aria-hidden="true">🎓</span>
+              <p>Cuidado com respaldo de<br />estudantes de Veterinária</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trilha de patinhas decorativa -->
+        <div class="paw-trail" aria-hidden="true">
+          <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span
+          ><span>🐾</span>
+        </div>
+      </section>
+
+      <!-- ===================== SEÇÃO QUEM SOMOS ===================== -->
+      <section class="about" id="sobre">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Quem Somos</p>
+            <h2 class="section-title">Conheça as Pet Alegres</h2>
+            <p class="section-subtitle">
+              Duas apaixonadas por animais, estudando para cuidar deles com
+              ainda mais conhecimento técnico.
+            </p>
+          </div>
+
+          <div class="about__grid">
+            <!-- Card da fundadora Luisa -->
+            <article class="card card--founder">
+              <!-- PLACEHOLDER: foto circular da Luisa — substitua o src pela foto definitiva -->
+              <div class="founder__avatar-wrap">
+                <img
+                  src="/assets/images/Luisa Resende.jpg"
+                  alt="Foto de Luisa Resende"
+                  class="founder__avatar img-placeholder"
+                />
+              </div>
+              <h3 class="card__title">Luisa Resende</h3>
+              <p class="founder__role">
+                Estudante de Medicina Veterinária — UFES, Alegre-ES
+              </p>
+              <p class="card__text">
+                "Amo gatinhos, cachorrinhos e outros bichinhos."
+              </p>
+              <a
+                href="https://instagram.com/luisa_resende25"
+                target="_blank"
+                rel="noopener"
+                class="founder__social"
+              >
+                <span aria-hidden="true"
+                  ><img
+                    class="icon-instagram-about-us"
+                    src="/assets/images/Instagram_Glyph_Gradient.svg"
+                  />
+                </span>
+                @luisa_resende25
+              </a>
+            </article>
+
+            <!-- Card da fundadora Mayra -->
+            <article class="card card--founder">
+              <!-- PLACEHOLDER: foto circular da Mayra — substitua o src pela foto definitiva -->
+              <div class="founder__avatar-wrap">
+                <img
+                  src="/assets/images/Mayra Rodrigues.jpg"
+                  alt="Foto de Mayra Rodrigues"
+                  class="founder__avatar img-placeholder"
+                />
+              </div>
+              <h3 class="card__title">Mayra Rodrigues</h3>
+              <p class="founder__role">
+                Estudante de Medicina Veterinária — UFES, Alegre-ES
+              </p>
+              <p class="card__text">
+                "Amo gatinhos, cachorrinhos e animais silvestres."
+              </p>
+              <a
+                href="https://instagram.com/_ma.yraa"
+                target="_blank"
+                rel="noopener"
+                class="founder__social"
+              >
+                <span aria-hidden="true"
+                  ><img
+                    class="icon-instagram-about-us"
+                    src="/assets/images/Instagram_Glyph_Gradient.svg"
+                /></span>
+                @_ma.yraa
+              </a>
+            </article>
+          </div>
+
+          <p class="about__highlight">
+            🎓 <strong>Diferencial acadêmico:</strong> ambas cursam Medicina
+            Veterinária na UFES, unindo carinho de tutoras apaixonadas ao
+            conhecimento técnico de futuras veterinárias.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== SEÇÃO COMO SÃO NOSSAS VISITAS ===================== -->
+      <section class="services" id="servicos">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Como Funciona</p>
+            <h2 class="section-title">Como são nossas visitas?</h2>
+            <p class="section-subtitle">
+              Não vamos apenas alimentar seu bichinho, mas também realizar um
+              cuidado completo:
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="card card--service">
+              <!-- PLACEHOLDER: foto exemplificativa da visita — substitua o src -->
+              <img
+                src="/assets/images/bebedouro.jpg"
+                alt="bebedouro de agua para pet"
+                class="card__img img-placeholder"
+              />
+              <div class="card__icon" aria-hidden="true">💧</div>
+              <h3 class="card__title">Água & Bebedouro</h3>
+              <p class="card__text">
+                Troca diária de água fresca e limpeza dos bebedouros.
+              </p>
+            </article>
+
+            <article class="card card--service">
+              <img
+                src="/assets/images/caixadeareia.jpg"
+                alt="Caixa de areia do pet"
+                class="card__img img-placeholder"
+              />
+              <div class="card__icon" aria-hidden="true">🧹</div>
+              <h3 class="card__title">Caixinha de Areia</h3>
+              <p class="card__text">
+                Higienização completa da caixinha de areia dos gatinhos.
+              </p>
+            </article>
+
+            <article class="card card--service">
+              <img
+                src="/assets/images/cuidadossaudepet.jpg"
+                alt="Pet sendo cuidado durante a visita"
+                class="card__img img-placeholder"
+              />
+              <div class="card__icon" aria-hidden="true">🩺</div>
+              <h3 class="card__title">Cuidados de Saúde</h3>
+              <p class="card__text">
+                Tratamento de feridas e administração de medicamentos.
+              </p>
+              <span class="badge-note">* Custo adicional</span>
+            </article>
+
+            <article class="card card--service">
+              <img
+                src="/assets/images/gatobrincando.jpg"
+                alt="Pet sendo cuidado durante a visita"
+                class="card__img img-placeholder"
+              />
+              <div class="card__icon" aria-hidden="true">🎾</div>
+              <h3 class="card__title">Hora da Brincadeira</h3>
+              <p class="card__text">
+                Brincamos com seu pet para gastar energia com segurança.
+              </p>
+            </article>
+
+            <article class="card card--service card--service-wide">
+              <img
+                src="/assets/images/petcarinho.jpg"
+                alt="Pets recebendo carinho durante a visita"
+                class="card__img img-placeholder"
+              />
+              <div class="card__icon" aria-hidden="true">❤️</div>
+              <h3 class="card__title">Carinho & Respeito</h3>
+              <p class="card__text">
+                Muito carinho, afeto e respeito às individualidades de cada
+                animal.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SEÇÃO DE DEPOIMENTOS ===================== -->
+      <section class="testimonials" id="depoimentos">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Depoimentos</p>
+            <h2 class="section-title">O que dizem os tutores</h2>
+            <p class="section-subtitle">
+              A tranquilidade de quem confia o seu bichinho às Pet Alegres.
+            </p>
+          </div>
+
+          <div class="testimonials__grid">
+            <article class="card card--testimonial">
+              <div
+                class="testimonial__stars"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p class="testimonial__text">
+                "Saber que quem cuida do meu gato entende de comportamento e
+                saúde animal me deixa muito mais tranquila. As meninas são
+                cuidadosas e super atenciosas!"
+              </p>
+              <div class="testimonial__author">
+                <!-- PLACEHOLDER: foto do tutor e do pet — substitua o src pela foto real -->
+                <div class="avatar-group">
+                  <img
+                    src="https://placehold.co/100x100/F4D068/3A342E?text=Tutor"
+                    alt="Foto do tutor"
+                    class="avatar avatar--person img-placeholder"
+                  />
+                  <img
+                    src="https://placehold.co/100x100/FF8A5B/FFFFFF?text=Pet"
+                    alt="Foto do pet"
+                    class="avatar avatar--pet img-placeholder"
+                  />
+                </div>
+                <div class="testimonial__names">
+                  <strong>Mariana e Thor</strong>
+                  <span>tutora e cão 🐕</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--testimonial">
+              <div
+                class="testimonial__stars"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p class="testimonial__text">
+                "Viajei tranquilo sabendo que a Luisa e a Mayra estavam de olho
+                na minha cachorrinha. O diferencial de serem estudantes de
+                veterinária faz toda a diferença."
+              </p>
+              <div class="testimonial__author">
+                <div class="avatar-group">
+                  <img
+                    src="https://placehold.co/100x100/F4D068/3A342E?text=Tutor"
+                    alt="Foto do tutor"
+                    class="avatar avatar--person img-placeholder"
+                  />
+                  <img
+                    src="https://placehold.co/100x100/FF8A5B/FFFFFF?text=Pet"
+                    alt="Foto do pet"
+                    class="avatar avatar--pet img-placeholder"
+                  />
+                </div>
+                <div class="testimonial__names">
+                  <strong>Rafael e Mel</strong>
+                  <span>tutor e cadela 🐩</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--testimonial">
+              <div
+                class="testimonial__stars"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p class="testimonial__text">
+                "Meu coelho é bem arisco e mesmo assim recebeu um cuidado
+                incrível. Recomendo de olhos fechados para quem busca confiança
+                e afeto de verdade."
+              </p>
+              <div class="testimonial__author">
+                <div class="avatar-group">
+                  <img
+                    src="https://placehold.co/100x100/F4D068/3A342E?text=Tutor"
+                    alt="Foto do tutor"
+                    class="avatar avatar--person img-placeholder"
+                  />
+                  <img
+                    src="https://placehold.co/100x100/FF8A5B/FFFFFF?text=Pet"
+                    alt="Foto do pet"
+                    class="avatar avatar--pet img-placeholder"
+                  />
+                </div>
+                <div class="testimonial__names">
+                  <strong>Beatriz e Fuinha</strong>
+                  <span>tutora e coelho 🐰</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SEÇÃO DE CONTATO ===================== -->
+      <section class="contact" id="contato">
+        <div class="container contact__inner">
+          <h2 class="contact__title">
+            Vamos cuidar do seu pet com muito carinho?
+          </h2>
+          <p class="contact__text">
+            Para agendamentos, entre em contato pelo nosso WhatsApp ou
+            Instagram!
+          </p>
+
+          <div class="contact__buttons">
+            <a
+              href="https://wa.me/5527999990000"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--whatsapp btn--large"
+            >
+              <span aria-hidden="true">
+                <img
+                  class="icon-whatsapp-hero"
+                  src="/assets/images/icon-whatsapp-svg.svg"
+                />
+              </span>
+              Falar no WhatsApp
+            </a>
+            <a
+              href="https://instagram.com/luisa_resende25"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--instagram btn--large"
+            >
+              <span aria-hidden="true"
+                ><img
+                  class="icon-instagram-about-us"
+                  src="/assets/images/Instagram_Glyph_White.svg"
+              /></span>
+              @luisa_resende25
+            </a>
+            <a
+              href="https://instagram.com/_ma.yraa"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--instagram btn--large"
+            >
+              <span aria-hidden="true"
+                ><img
+                  class="icon-instagram-about-us"
+                  src="/assets/images/Instagram_Glyph_White.svg"
+              /></span>
+              @_ma.yraa
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#inicio" class="logo logo--footer">
+            <span class="logo__icon" aria-hidden="true">🐾</span>
+            <span class="logo__text">Pets Alegres</span>
+          </a>
+          <p class="footer__tagline">
+            Pet Sitting com carinho e conhecimento técnico de futuras
+            veterinárias.
+          </p>
+        </div>
+
+        <nav class="footer__links" aria-label="Links rápidos">
+          <h3 class="footer__heading">Links rápidos</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#servicos">Como Funciona</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h3 class="footer__heading">Localização</h3>
+          <ul>
+            <li>📍 Alegre, ES</li>
+            <li>✉️ ola@petalegres.com.br</li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <h3 class="footer__heading">Redes sociais</h3>
+          <div class="footer__social-icons">
+            <a
+              href="https://wa.me/5527992651576"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              ><img
+                class="icon-whatsapp-footer"
+                src="/assets/images/icon-whatsapp-svg.svg"
+            /></a>
+            <a
+              href="https://instagram.com/luisa_resende25"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram da Luisa"
+              ><img
+                class="icon-instagram-about-us"
+                src="/assets/images/Instagram_Glyph_Gradient.svg"
+            /></a>
+            <a
+              href="https://instagram.com/_ma.yraa"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram da Mayra"
+              ><img
+                class="icon-instagram-about-us"
+                src="/assets/images/Instagram_Glyph_Gradient.svg"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>
+          &copy; <span id="year"></span> Pets Alegres. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
