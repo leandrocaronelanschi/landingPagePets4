@@ -634,6 +634,13 @@ button:focus-visible {
   gap: var(--space-lg);
 }
 
+.testimonials-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
 .card--testimonial {
   background-color: var(--color-white);
   border: 1px solid rgba(58, 52, 46, 0.06);
@@ -705,6 +712,21 @@ button:focus-visible {
 }
 .testimonial__names span {
   color: var(--color-text-light);
+}
+
+.container-button-testimonials {
+  display: flex;
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 2rem auto;
+}
+
+.button-more-testimonials {
+  width: 100%;
+  max-width: 20rem;
+  background-color: #f58529;
 }
 
 /* -------------------- 10. CONTATO -------------------- */
@@ -919,6 +941,13 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+  }
+
   .contact__buttons {
     flex-direction: column;
     align-items: center;
@@ -963,6 +992,21 @@ button:focus-visible {
   .paw-trail {
     gap: var(--space-md);
     font-size: 1.1rem;
+  }
+
+  .testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card--testimonial {
+    width: 20rem;
   }
 
   .footer__inner {
