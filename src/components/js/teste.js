@@ -8,20 +8,11 @@ const button = document.querySelector(".button");
 button.addEventListener("click", () => {
   if (indiceAtual < array.length) {
     const parte = array.slice(indiceAtual, indiceAtual + qtdDepoimentos);
-    arrayAtual.push(...parte);
+    // arrayAtual.push(...parte);
 
     indiceAtual += qtdDepoimentos;
 
     console.log(arrayAtual);
+    console.log(parte);
   }
 });
-
-for (let i = 0; i < array.length; i += qtdDepoimentos) {
-  const clickBotao = button.addEventListener("click", {
-    qtdDepoimentos
-  });
-  const parte = array.slice(i, i + clickBotao);
-  arrayAtual.push(...parte);
-}
-
-console.log(arrayAtual);

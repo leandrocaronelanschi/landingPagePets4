@@ -1,0 +1,89 @@
+<div class="container-form-tetimonials-submission">
+  <form class="form-testimonials-submission" id="submission-form-testimonials">
+    <div class="container-name-tutor">
+      <label class="label-name-tutor" for="name-tutor">Nome do Tutor:</label>
+      <input
+        type="text"
+        class="input-name-tutor"
+        id="name-tutor"
+        name="name_tutor"
+      />
+    </div>
+    <div class="container-name-pet">
+      <label class="label-name-pet">Nome do Pet:</label>
+      <input
+        type="text"
+        class="input-name-pet"
+        id="name-pet"
+        name="name_pet"
+        required
+      />
+    </div>
+    <div class="container-emoji-pet">
+      <label class="label-emoji-pet" for="emoji-pet"
+        >Escolha um emoji para seu Pet:</label
+      >
+      <input
+        type="text"
+        class="input-emoji-pet"
+        id="emoji-pet"
+        name="emoji_pet"
+        required
+      />
+    </div>
+    <div class="container-uf-tutor">
+      <label class="label-uf-tutor" for="uf-tutor">Estado:</label>
+      <input class="input-uf-tutor" id="uf-tutor" name="uf_tutor" />
+    </div>
+
+    <div class="container-city-tutor">
+      <label class="label-city-tutor" for="city-tutor">Cidade:</label>
+      <input
+        class="input-city-tutor"
+        id="city-tutor"
+        name="city_tutor"
+        required
+      />
+    </div>
+
+    <div class="container-phrase-testimonials">
+      <label class="label-phrase-testimonials" for="phrase-testimonials"
+        >Escreva seu Depoimento:</label
+      >
+      <textarea
+        class="input-phrase-testimonials"
+        id="phrase-testimonials"
+        name="phrase"
+        rows="4"
+        placeholder="Escreva seu depoimento."
+      ></textarea>
+    </div>
+    <div class="container-stars-testimonials">
+      <label class="label-stars-testimonials" for="stars-avaliation"
+        >Avaliação:</label
+      >
+      <input
+        type="number"
+        name="stars"
+        class="stars-testimonials-avaliation"
+        id="stars-avaliation"
+        required
+      />
+    </div>
+
+    <div class="container-btn-send-testimonials">
+      <button
+        type="submit"
+        class="btn-send-testimonials"
+        id="testimonials-btn-send"
+      >
+        Enviar
+      </button>
+    </div>
+  </form>
+</div>
+
+<script
+  type="module"
+  src="/src/components/js/testimonialsSubmission.js"
+></script>
