@@ -56,7 +56,7 @@ function renderTestimonials(testimonialsList, container) {
     }
 
     if (cityUfEl) {
-      cityUfEl.textContent = item.city_tutor || "";
+      cityUfEl.textContent = `${item.city_tutor || ""} - ${item.uf_tutor || ""}`;
     }
 
     if (tutorImg) {

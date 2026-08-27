@@ -632,6 +632,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
+  place-items: center;
 }
 
 /* .testimonials-carousel {
@@ -652,6 +653,16 @@ button:focus-visible {
 .card--testimonial:hover {
   box-shadow: var(--shadow-soft);
   transform: translateY(-4px);
+}
+
+.container-assessment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-assessment {
+  margin-left: 0.2rem;
 }
 
 .testimonial__stars {
@@ -681,8 +692,8 @@ button:focus-visible {
 /* PLACEHOLDER: fotos reais do tutor e do pet — troque o src no HTML */
 .avatar {
   width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  height: 1.8rem;
+  /* border-radius: 50%; */
   object-fit: cover;
   border: 3px solid var(--color-white);
   position: absolute;
@@ -696,7 +707,7 @@ button:focus-visible {
 }
 .avatar--pet {
   bottom: 0;
-  left: 22px;
+  top: 22px;
   z-index: 1;
 }
 
@@ -714,19 +725,75 @@ button:focus-visible {
   color: var(--color-text-light);
 }
 
-.container-button-testimonials {
-  display: flex;
-  width: 20rem;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  margin: 2rem auto;
+.city-uf-tutor {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--color-text-light);
 }
 
-.button-more-testimonials {
+/* Container de alinhamento */
+.container-button-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
   width: 100%;
-  max-width: 20rem;
-  background-color: #f58529;
+}
+
+/* Estilização do Botão */
+.button-more-testimonials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* Dimensões e Espaçamento */
+  padding: 0.875rem 2rem;
+  min-width: 220px;
+
+  /* Cores e Bordas */
+  background-color: transparent;
+  color: #ff8a5b; /* Laranja / Terracota da paleta */
+  border: 2px solid #ff8a5b;
+  border-radius: 9999px; /* Formato Pílula / Pill Button */
+
+  /* Tipografia */
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  /* Interações */
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(58, 52, 46, 0.05);
+}
+
+/* Efeito Hover (passar o mouse) */
+.button-more-testimonials:hover {
+  background-color: #ff8a5b;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 138, 91, 0.25);
+}
+
+/* Efeito Active (ao clicar) */
+.button-more-testimonials:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 138, 91, 0.2);
+}
+
+/* Estado Desabilitado / Carregando */
+.button-more-testimonials:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border-color: #d1d5db;
+  color: #9ca3af;
+  background-color: transparent;
 }
 
 /* -------------------- 10. CONTATO -------------------- */
