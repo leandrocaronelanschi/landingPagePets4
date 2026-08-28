@@ -15,6 +15,7 @@
   --color-primary-dark: #f06c3a; /* laranja mais escuro (hover) */
   --color-secondary: #f4d068; /* amarelo pastel */
   --color-accent: #6fbf9c; /* verde acolhedor */
+  --color-accent-dark: #afeed3; /* verde acolhedor escuro */
 
   /* Cores de marcas (WhatsApp / Instagram) */
   --color-whatsapp: #25d366;
@@ -573,7 +574,7 @@ button:focus-visible {
 .card--service .card__icon,
 .card--service .card__title,
 .card--service .card__text,
-.card--service .badge-note {
+.card--service {
   padding-inline: var(--space-lg);
 }
 
@@ -593,7 +594,7 @@ button:focus-visible {
 }
 
 .card--service:hover .card__icon {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent-dark);
   transform: scale(1.08) rotate(-6deg);
 }
 
@@ -614,7 +615,7 @@ button:focus-visible {
   font-weight: 600;
   color: var(--color-primary-dark);
   background: rgba(255, 138, 91, 0.12);
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: var(--radius-full);
 }
 
@@ -677,15 +678,15 @@ button:focus-visible {
 
 .testimonial__author {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
   margin-top: auto;
+  gap: var(--space-xs);
 }
 
 .avatar-group {
-  position: relative;
-  width: 56px;
-  height: 48px;
+  display: flex;
+  width: 3.5rem;
   flex-shrink: 0;
 }
 
@@ -693,27 +694,24 @@ button:focus-visible {
 .avatar {
   width: 44px;
   height: 1.8rem;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-white);
-  position: absolute;
+  /* position: absolute; */
   box-shadow: 0 2px 8px rgba(58, 52, 46, 0.12);
 }
 
 .avatar--person {
-  top: 0;
-  left: 0;
   z-index: 2;
 }
 .avatar--pet {
-  bottom: 0;
-  top: 22px;
   z-index: 1;
 }
 
 .testimonial__names {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 0.88rem;
 }
 
@@ -1088,5 +1086,9 @@ button:focus-visible {
 
   .contact__inner {
     padding-inline: var(--space-sm);
+  }
+
+  .btn--whatsapp {
+    box-shadow: 0 6px 10px rgba(37, 211, 102, 0.3);
   }
 }

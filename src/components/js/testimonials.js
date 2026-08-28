@@ -52,7 +52,7 @@ function renderTestimonials(testimonialsList, container) {
     }
 
     if (nameTutorPetEl) {
-      nameTutorPetEl.textContent = item.name_tutor || "";
+      nameTutorPetEl.textContent = `${item.name_tutor || ""} e ${item.name_pet || ""} ${item.emoji_pet}`;
     }
 
     if (cityUfEl) {
