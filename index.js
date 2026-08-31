@@ -25,6 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hamburger.addEventListener("click", toggleMenu);
 
+  // Fecha ao clicar fora da área do menu e do botão hambúrguer
+  document.addEventListener("click", (event) => {
+    const isMenuOpen = nav.classList.contains("is-open");
+    const clickedInsideNav = nav.contains(event.target);
+    const clickedHamburger = hamburger.contains(event.target);
+
+    if (isMenuOpen && !clickedInsideNav && !clickedHamburger) {
+      toggleMenu();
+    }
+  });
+
   // Fecha o menu automaticamente ao clicar em qualquer link (mobile)
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {

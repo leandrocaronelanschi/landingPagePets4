@@ -327,6 +327,10 @@ button:focus-visible {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.area-render-template-menu {
+  display: flex;
+}
+
 /* -------------------- 6. HERO -------------------- */
 .hero {
   position: relative;
