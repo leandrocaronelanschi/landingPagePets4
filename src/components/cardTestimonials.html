@@ -1,28 +1,39 @@
 <article class="card card--testimonial" id="template-card-testimonials">
-  <div class="testimonial__stars" aria-label="Avaliação 5 de 5 estrelas">
-    ⭐⭐⭐⭐⭐
+  <div class="container-assessment">
+    <div class="assessment-testimonials">
+      <span class="title-assessment">Avaliação</span>
+    </div>
+    <div
+      class="testimonial__stars"
+      id="stars_testimonials"
+      aria-label="Avaliação 5 de 5 estrelas"
+    >
+      ⭐⭐⭐⭐⭐
+    </div>
   </div>
-  <p class="testimonial__text">
-    "Saber que quem cuida do meu gato entende de comportamento e saúde animal me
-    deixa muito mais tranquila. As meninas são cuidadosas e super atenciosas!"
-  </p>
+  <p
+    class="testimonial__text"
+    id="card-testimonial-phrase"
+    data-field="phrase"
+  ></p>
   <div class="testimonial__author">
-    <!-- PLACEHOLDER: foto do tutor e do pet — substitua o src pela foto real -->
     <div class="avatar-group">
       <img
         src="https://placehold.co/100x100/F4D068/3A342E?text=Tutor"
         alt="Foto do tutor"
         class="avatar avatar--person img-placeholder"
+        data-field="tutor-photo"
       />
       <img
         src="https://placehold.co/100x100/FF8A5B/FFFFFF?text=Pet"
         alt="Foto do pet"
         class="avatar avatar--pet img-placeholder"
+        data-field="pet-photo"
       />
     </div>
     <div class="testimonial__names">
-      <strong>Mariana e Thor</strong>
-      <span>tutora e cão 🐕</span>
+      <h4 class="testimonials-name-tutor-pet" data-field="name-tutor-pet"></h4>
+      <h4 class="city-uf-tutor" data-field="tutor-city-uf"></h4>
     </div>
   </div>
 </article>

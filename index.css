@@ -15,6 +15,7 @@
   --color-primary-dark: #f06c3a; /* laranja mais escuro (hover) */
   --color-secondary: #f4d068; /* amarelo pastel */
   --color-accent: #6fbf9c; /* verde acolhedor */
+  --color-accent-dark: #afeed3; /* verde acolhedor escuro */
 
   /* Cores de marcas (WhatsApp / Instagram) */
   --color-whatsapp: #25d366;
@@ -573,7 +574,7 @@ button:focus-visible {
 .card--service .card__icon,
 .card--service .card__title,
 .card--service .card__text,
-.card--service .badge-note {
+.card--service {
   padding-inline: var(--space-lg);
 }
 
@@ -593,7 +594,7 @@ button:focus-visible {
 }
 
 .card--service:hover .card__icon {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent-dark);
   transform: scale(1.08) rotate(-6deg);
 }
 
@@ -614,7 +615,7 @@ button:focus-visible {
   font-weight: 600;
   color: var(--color-primary-dark);
   background: rgba(255, 138, 91, 0.12);
-  padding: 0.25rem 0.6rem;
+  padding: 0.25rem 0.7rem;
   border-radius: var(--radius-full);
 }
 
@@ -632,7 +633,15 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
+  align-items: stretch;
 }
+
+/* .testimonials-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+} */
 
 .card--testimonial {
   background-color: var(--color-white);
@@ -640,11 +649,23 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
+  height: 100%;
+  min-height: 380px;
 }
 
 .card--testimonial:hover {
   box-shadow: var(--shadow-soft);
   transform: translateY(-4px);
+}
+
+.container-assessment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-assessment {
+  margin-left: 0.2rem;
 }
 
 .testimonial__stars {
@@ -659,43 +680,40 @@ button:focus-visible {
 
 .testimonial__author {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
   margin-top: auto;
+  gap: var(--space-xs);
 }
 
 .avatar-group {
-  position: relative;
-  width: 56px;
-  height: 48px;
+  display: flex;
+  width: 3.5rem;
   flex-shrink: 0;
 }
 
 /* PLACEHOLDER: fotos reais do tutor e do pet — troque o src no HTML */
 .avatar {
   width: 44px;
-  height: 44px;
+  height: 1.8rem;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--color-white);
-  position: absolute;
+  /* position: absolute; */
   box-shadow: 0 2px 8px rgba(58, 52, 46, 0.12);
 }
 
 .avatar--person {
-  top: 0;
-  left: 0;
   z-index: 2;
 }
 .avatar--pet {
-  bottom: 0;
-  left: 22px;
   z-index: 1;
 }
 
 .testimonial__names {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-size: 0.88rem;
 }
 
@@ -705,6 +723,77 @@ button:focus-visible {
 }
 .testimonial__names span {
   color: var(--color-text-light);
+}
+
+.city-uf-tutor {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
+/* Container de alinhamento */
+.container-button-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* Estilização do Botão */
+.button-more-testimonials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* Dimensões e Espaçamento */
+  padding: 0.875rem 2rem;
+  min-width: 220px;
+
+  /* Cores e Bordas */
+  background-color: transparent;
+  color: #ff8a5b; /* Laranja / Terracota da paleta */
+  border: 2px solid #ff8a5b;
+  border-radius: 9999px; /* Formato Pílula / Pill Button */
+
+  /* Tipografia */
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  /* Interações */
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(58, 52, 46, 0.05);
+}
+
+/* Efeito Hover (passar o mouse) */
+.button-more-testimonials:hover {
+  background-color: #ff8a5b;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 138, 91, 0.25);
+}
+
+/* Efeito Active (ao clicar) */
+.button-more-testimonials:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 138, 91, 0.2);
+}
+
+/* Estado Desabilitado / Carregando */
+.button-more-testimonials:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  border-color: #d1d5db;
+  color: #9ca3af;
+  background-color: transparent;
 }
 
 /* -------------------- 10. CONTATO -------------------- */
@@ -916,8 +1005,15 @@ button:focus-visible {
   }
 
   .testimonials__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  /* .testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+  } */
 
   .contact__buttons {
     flex-direction: column;
@@ -965,6 +1061,32 @@ button:focus-visible {
     font-size: 1.1rem;
   }
 
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .testimonial__author {
+    margin-top: auto;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card--testimonial {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 20rem;
+  }
+
   .footer__inner {
     grid-template-columns: 1fr;
     text-align: left;
@@ -972,5 +1094,9 @@ button:focus-visible {
 
   .contact__inner {
     padding-inline: var(--space-sm);
+  }
+
+  .btn--whatsapp {
+    box-shadow: 0 6px 10px rgba(37, 211, 102, 0.3);
   }
 }
