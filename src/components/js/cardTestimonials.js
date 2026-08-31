@@ -1,6 +1,6 @@
 async function loadCardTestimonials() {
   try {
-    const response = await fetch("./src/components/cardTestimonials.html");
+    const response = await fetch("src/components/cardTestimonials.html");
     const responseText = await response.text();
 
     const parser = new DOMParser();
