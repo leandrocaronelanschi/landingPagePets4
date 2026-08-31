@@ -15,7 +15,7 @@ const btnMore = document.getElementById("more-testimonials-button");
 //Carrega o template HTML do componente uma única vez
 
 async function loadTemplate() {
-  const response = await fetch("/src/components/cardTestimonials.html");
+  const response = await fetch("src/components/cardTestimonials.html");
   if (!response.ok) {
     throw new Error(`Erro ao buscar o template HTML: ${response.status}`);
   }
