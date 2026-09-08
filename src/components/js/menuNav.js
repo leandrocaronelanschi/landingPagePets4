@@ -1,0 +1,31 @@
+const btnMenuNav = document.querySelector(".btn-hamburger-header");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+async function loadMenuNav() {
+  try {
+    const response = await fetch("/src/components/templates/menuNav.html");
+    const htmlText = await response.text();
+    const menuNav = document.getElementById("area-menu-nav");
+    menuNav.innerHTML = htmlText;
+    console.log(htmlText);
+  } catch (error) {
+    console.error("Erro ao carregar o Menu de navegação", error);
+  }
+}
+
+function handleScreenChange(e) {
+  if (e.matches) {
+    btnMenuNav.style.display = "inline-block";
+  } else {
+    btnMenuNav.style.display = "none";
+  }
+}
+
+// Executa na inicialização e escuta mudanças na tela
+
+mediaQuery.addEventListener("change", handleScreenChange);
+handleScreenChange(mediaQuery);
+
+btnMenuNav.addEventListener("click", () => {
+  loadMenuNav();
+});
