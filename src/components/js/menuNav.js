@@ -26,6 +26,13 @@ function handleScreenChange(e) {
 mediaQuery.addEventListener("change", handleScreenChange);
 handleScreenChange(mediaQuery);
 
-btnMenuNav.addEventListener("click", () => {
-  loadMenuNav();
+btnMenuNav.addEventListener("click", async () => {
+  await loadMenuNav();
+
+  let fieldMenu = document.querySelector(".container-menu-nav");
+  if (fieldMenu.style.display === "none") {
+    fieldMenu.style.display === "flex";
+  } else {
+    fieldMenu.style.display = "none";
+  }
 });

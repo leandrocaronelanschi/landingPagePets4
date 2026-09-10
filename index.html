@@ -24,19 +24,23 @@
     />
 
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/src/components/css/menuNav.css" />
   </head>
   <body>
     <!-- ===================== CABEÇALHO ===================== -->
     <header class="header" id="header">
+      <button class="btn-hamburger-header">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
       <div class="container header__inner">
         <a href="#inicio" class="logo">
           <span class="logo__icon" aria-hidden="true">🐾</span>
           <span class="logo__text">Pets Alegres</span>
         </a>
-        <div class="area-render-menu-nav" id="area-menu-nav"></div>
+      </div>
 
-        <!-- Menu de navegação -->
-        <!-- <nav class="nav" id="nav">
+      <!-- Menu de navegação -->
+      <!-- <nav class="nav" id="nav">
           <ul class="nav__list">
             <li><a href="#inicio" class="nav__link">Início</a></li>
             <li><a href="#sobre" class="nav__link">Quem Somos</a></li>
@@ -54,8 +58,8 @@
           </a>
         </nav> -->
 
-        <!-- Botão hambúrguer (mobile) -->
-        <!-- <button
+      <!-- Botão hambúrguer (mobile) -->
+      <!-- <button
           class="hamburger"
           id="hamburger"
           aria-label="Abrir menu de navegação"
@@ -67,14 +71,10 @@
           <span class="hamburger__line"></span>
         </button>
       </div> -->
-      <button class="btn-hamburger-header">
-      <span class="material-symbols-outlined">
-menu
-</span>
-</button>
     </header>
 
     <main>
+      <div class="area-render-menu-nav" id="area-menu-nav"></div>
       <!-- ===================== SEÇÃO HERO ===================== -->
       <section class="hero" id="inicio">
         <div class="container hero__inner">
